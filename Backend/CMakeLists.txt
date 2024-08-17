@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26.4)
+cmake_minimum_required(VERSION 3.25.1)
 project(UniversalConverter)
 
 set(CMAKE_CXX_STANDARD 17)

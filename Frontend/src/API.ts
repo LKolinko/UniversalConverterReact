@@ -1,6 +1,6 @@
 const request = async (num: string, Fbase: string, Sbase: string): Promise<any> => {
     try {
-        const response = await fetch('http://localhost:1234/api', {
+        const response = await fetch('http://0.0.0.0:1234/api', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

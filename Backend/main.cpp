@@ -106,6 +106,9 @@ std::string onclick(std::string number, std::string p, std::string q) {
 }
 
 int main() {
+
+    std::cout << "OK" << '\n';
+
     Server svr;
 
     svr.Get("/ping", [](const auto& req, auto& res) {
@@ -142,7 +145,7 @@ int main() {
         JSON_RESPONSE(json_response);
     });     
 
-    svr.listen("localhost", 1234);   
+    svr.listen("0.0.0.0", 1234);   
     
     return 0;
 }
