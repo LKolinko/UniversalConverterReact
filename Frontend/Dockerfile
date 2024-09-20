@@ -5,8 +5,7 @@ COPY . /app
 WORKDIR /app
 
 RUN apk add npm
-RUN npm install tsx
-RUN npm install vite
+RUN npm install
 
 RUN npm run build
 CMD [ "npm", "run", "preview" ]
